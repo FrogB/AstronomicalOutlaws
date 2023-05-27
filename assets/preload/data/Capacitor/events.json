@@ -1,0 +1,61 @@
+{
+	"song": {
+		"events": [
+			[
+				128000,
+				[
+					[
+						"Change Scroll Speed",
+						"1.15",
+						"1"
+					],
+					[
+						"Thunderstorm type black screen",
+						"1",
+						""
+					],
+					[
+						"Change Character",
+						"1",
+						"PCman-angry"
+					]
+				]
+			],
+			[
+				139294.117647059,
+				[
+					[
+						"Thunderstorm type black screen",
+						"0",
+						""
+					],
+					[
+						"Flash effect",
+						"0",
+						""
+					]
+				]
+			],
+			[
+				161529.411764706,
+				[
+					[
+						"Change Scroll Speed",
+						"0.2",
+						"0.25"
+					]
+				]
+			],
+			[
+				161882.352941176,
+				[
+					[
+						"Change Scroll Speed",
+						"1.15",
+						"0.001"
+					]
+				]
+			]
+		]
+	}
+}

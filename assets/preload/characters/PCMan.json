@@ -1,0 +1,78 @@
+{
+	"animations": [
+		{
+			"loop": false,
+			"offsets": [
+				350,
+				0
+			],
+			"anim": "singLEFT",
+			"fps": 20,
+			"name": "PC manz left",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				350,
+				0
+			],
+			"anim": "singDOWN",
+			"fps": 20,
+			"name": "PC manz down",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				350,
+				0
+			],
+			"anim": "singUP",
+			"fps": 20,
+			"name": "PC manz up",
+			"indices": []
+		},
+		{
+			"loop": false,
+			"offsets": [
+				350,
+				0
+			],
+			"anim": "singRIGHT",
+			"fps": 20,
+			"name": "PC manz right",
+			"indices": []
+		},
+		{
+			"offsets": [
+				350,
+				0
+			],
+			"indices": [],
+			"fps": 17,
+			"anim": "idle",
+			"loop": false,
+			"name": "PC manz idle"
+		}
+	],
+	"no_antialiasing": false,
+	"image": "characters/PCMan",
+	"position": [
+		0,
+		0
+	],
+	"healthicon": "PcMan",
+	"flip_x": false,
+	"healthbar_colors": [
+		138,
+		138,
+		137
+	],
+	"camera_position": [
+		-440,
+		-70
+	],
+	"sing_duration": 6.1,
+	"scale": 1.3
+}

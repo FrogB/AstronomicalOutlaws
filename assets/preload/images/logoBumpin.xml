@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="logoBumpin.png">
+	<!-- Created with Adobe Animate version 21.0.5.40714 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="bumpthe funny0000" x="0" y="0" width="713" height="327" frameX="-33" frameY="-24" frameWidth="779" frameHeight="376"/>
+	<SubTexture name="bumpthe funny0001" x="713" y="0" width="779" height="376"/>
+	<SubTexture name="bumpthe funny0002" x="713" y="0" width="779" height="376"/>
+	<SubTexture name="bumpthe funny0003" x="0" y="376" width="716" height="345" frameX="-32" frameY="-15" frameWidth="779" frameHeight="376"/>
+	<SubTexture name="bumpthe funny0004" x="0" y="376" width="716" height="345" frameX="-32" frameY="-15" frameWidth="779" frameHeight="376"/>
+	<SubTexture name="bumpthe funny0005" x="716" y="376" width="729" height="335" frameX="-25" frameY="-20" frameWidth="779" frameHeight="376"/>
+	<SubTexture name="bumpthe funny0006" x="716" y="376" width="729" height="335" frameX="-25" frameY="-20" frameWidth="779" frameHeight="376"/>
+	<SubTexture name="bumpthe funny0007" x="716" y="376" width="729" height="335" frameX="-25" frameY="-20" frameWidth="779" frameHeight="376"/>
+	<SubTexture name="bumpthe funny0008" x="716" y="376" width="729" height="335" frameX="-25" frameY="-20" frameWidth="779" frameHeight="376"/>
+	<SubTexture name="bumpthe funny0009" x="716" y="376" width="729" height="335" frameX="-25" frameY="-20" frameWidth="779" frameHeight="376"/>
+	<SubTexture name="bumpthe funny0010" x="716" y="376" width="729" height="335" frameX="-25" frameY="-20" frameWidth="779" frameHeight="376"/>
+	<SubTexture name="bumpthe funny0011" x="716" y="376" width="729" height="335" frameX="-25" frameY="-20" frameWidth="779" frameHeight="376"/>
+	<SubTexture name="bumpthe funny0012" x="716" y="376" width="729" height="335" frameX="-25" frameY="-20" frameWidth="779" frameHeight="376"/>
+	<SubTexture name="bumpthe funny0013" x="716" y="376" width="729" height="335" frameX="-25" frameY="-20" frameWidth="779" frameHeight="376"/>
+	<SubTexture name="bumpthe funny0014" x="716" y="376" width="729" height="335" frameX="-25" frameY="-20" frameWidth="779" frameHeight="376"/>
+</TextureAtlas>
