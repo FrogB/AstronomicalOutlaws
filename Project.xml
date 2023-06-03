@@ -2,7 +2,7 @@
 <project>
 	<!-- _________________________ Application Settings _________________________ -->
 
-	<app title="Friday Night Funkin' | Vs Dave & Bambi: Astronomical Outlaws - The Revival" file="Astronomical Outlaws" packageName="com.brimboi.astronomicaloutlaws" package="com.brimboi.astronomicaloutlaws" main="Main" version="0.2.8" company="Astronomical Outlaws Team" />
+	<app title="Friday Night Funkin' | Vs Dave & Bambi: Astronomical Outlaws" file="Astronomical Outlaws" packageName="com.brimboi.astronomicaloutlaws" package="com.brimboi.astronomicaloutlaws" main="Main" version="0.2.8" company="Astronomical Outlaws Team" />
 
 	<!--Switch Export with Unique ApplicationID and Icon-->
 	<set name="APP_ID" value="0x0100f6c013bbc000" />
