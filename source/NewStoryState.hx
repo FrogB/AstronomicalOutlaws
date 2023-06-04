@@ -214,6 +214,9 @@ class NewStoryState extends MusicBeatState
 		background3.cameras = [camHUD];
 		background4.cameras = [camHUD];
 	}
+
+	var curWeek:WeekData;
+	
 	override public function update(elapsed:Float)
 	{
 		if (whichWeek == 1)
@@ -373,11 +376,14 @@ class NewStoryState extends MusicBeatState
 	   {
 	    PlayState.storyPlaylist = [songName1, songName2, songName3];
 		PlayState.isStoryMode = true;
-	    PlayState.storyWeek = 2;
-	    PlayState.storyDifficulty = 2;
+	    PlayState.storyWeek = 0;
+		var curWeekInt = PlayState.storyWeek;
+		curWeek = WeekData.weeksLoaded.get(WeekData.weeksList[curWeekInt]);
+		trace(curWeekInt);
 	    PlayState.SONG = Song.loadFromJson(PlayState.storyPlaylist[0], '');
 	    PlayState.campaignScore = 0;
 	    PlayState.campaignMisses = 0;
+		FreeplayState.destroyFreeplayVocals();
 		new FlxTimer().start(1, function(tmr:FlxTimer)
 	    {
 		    LoadingState.loadAndSwitchState(new PlayState());
