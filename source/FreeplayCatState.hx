@@ -101,7 +101,7 @@ class FreeplayCatState extends MusicBeatState
 		week2.antialiasing = ClientPrefs.globalAntialiasing;
 		menuItems.add(week2);
 		
-		week2text = new FlxText(480, 480, 320, "Extras\n" + "& Fanmades\n");
+		week2text = new FlxText(480, 550, 320, "Extras\n");
 		week2text.setFormat(Paths.font("comic-sans.ttf"), 50, FlxColor.WHITE, CENTER, FlxTextBorderStyle.OUTLINE, FlxColor.BLACK);
 		week2text.scrollFactor.set();
 		week2text.borderSize = 3.25;
