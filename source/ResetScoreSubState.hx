@@ -88,7 +88,6 @@ class ResetScoreSubState extends MusicBeatSubstate
 		}
 		if(controls.BACK) {
 			FlxG.sound.play(Paths.sound('cancelMenu'), 1);
-			FreeplayState.fart = true;
 			close();
 		} else if(controls.ACCEPT) {
 			if(onYes) {
@@ -98,7 +97,6 @@ class ResetScoreSubState extends MusicBeatSubstate
 					Highscore.resetWeek(WeekData.weeksList[week], difficulty);
 				}
 			}
-			FreeplayState.fart = true;
 			FlxG.sound.play(Paths.sound('cancelMenu'), 1);
 			close();
 		}

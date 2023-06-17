@@ -453,7 +453,7 @@ class PlayState extends MusicBeatState
 				case 'power!': //duh
 					curStage = '3dPower';
 				case 'leftover' | 'beefsteak' | 'takeout':
-					curStage = '3dSandwich';
+					curStage = '3dBurger';
 				default:
 					curStage = 'stage';
 			}
@@ -566,14 +566,12 @@ class PlayState extends MusicBeatState
 				bg.shader = testshader.shader;
 				curbg = bg;
 			}
-
-			//burgambi removed = burgambi in v1.
-			//ok you know what nvm since we dont have the stage assets yet it doesnt hurt to prepare first right?
-			case '3dSandwich':
+			
+			case '3dBurger':
 			{
 				defaultCamZoom = 0.72;
-				curStage = '3dSandwich';
-				var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('burgambi/3dSandwich'));
+				curStage = '3dBurger';
+				var bg:FlxSprite = new FlxSprite(-600, -200).loadGraphic(Paths.image('burgambi/3dBurger'));
 				bg.antialiasing = true;
 				bg.scrollFactor.set(0.6, 0.6);
 				bg.active = true;

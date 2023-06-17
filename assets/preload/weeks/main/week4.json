@@ -1,0 +1,50 @@
+{
+	"songs": [
+		[
+			"Robotics",
+			"PcMan",
+			[
+				100,
+				100,
+				100
+			]
+		],
+		[
+			"Epicurean",
+			"PcMan2",
+			[
+				60,
+				40,
+				40
+			]
+		],
+		[
+			"Revolution",
+			"Pcman2",
+			[
+				60,
+				40,
+				40
+			]
+		]
+	],
+	"hiddenUntilUnlocked": false,
+	"hideFreeplay": false,
+	"weekBackground": "stage",
+	"difficulties": "Hard",
+	"weekCharacters": [
+		"dad",
+		"bf",
+		"gf"
+	],
+	"storyName": "Your New Week",
+	"weekName": "psmen",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"hideStoryMode": true,
+	"weekBefore": "tutorial",
+	"startUnlocked": true
+}

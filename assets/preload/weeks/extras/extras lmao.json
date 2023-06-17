@@ -1,0 +1,59 @@
+{
+	"songs": [
+		[
+			"Sonorous",
+			"face",
+			[
+				255,
+				255,
+				255
+			]
+		],
+		[
+			"Antadecent",
+			"face",
+			[
+				255,
+				255,
+				255
+			]
+		],
+		[
+			"???",
+			"face",
+			[
+				255,
+				255,
+				255
+			]
+		],
+		[
+			"Yobek",
+			"face",
+			[
+				255,
+				255,
+				255
+			]
+		]
+	],
+	"hiddenUntilUnlocked": false,
+	"hideFreeplay": false,
+	"weekBackground": "stage",
+	"difficulties": "Hard",
+	"weekCharacters": [
+		"dad",
+		"bf",
+		"gf"
+	],
+	"storyName": "Your New Week",
+	"weekName": "psmen",
+	"freeplayColor": [
+		146,
+		113,
+		253
+	],
+	"hideStoryMode": true,
+	"weekBefore": "tutorial",
+	"startUnlocked": true
+}

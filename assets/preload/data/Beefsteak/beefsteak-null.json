@@ -3479,7 +3479,6 @@
 		"healthdrainKill": false,
 		"cameraMoveOnNotes": false,
 		"healthdrain": 0,
-		"stage": "stage",
 		"needsVoices": true,
 		"bpm": 200
 	}

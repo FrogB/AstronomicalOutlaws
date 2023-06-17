@@ -1,7 +1,6 @@
 {
 	"song": {
 		"speed": 3.1,
-		"stage": "stage",
 		"player1": "bf",
 		"player2": "dad",
 		"healthdrain": 0,
