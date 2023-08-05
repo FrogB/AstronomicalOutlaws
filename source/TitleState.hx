@@ -727,6 +727,8 @@ class TitleState extends MusicBeatState
 	{
 		if (!skippedIntro)
 		{
+			Conductor.changeBPM(164); //fixes the power bpm change
+
 			if (playJingle) //Ignore deez
 			{
 				var easteregg:String = FlxG.save.data.psychDevsEasterEgg;

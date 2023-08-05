@@ -1,3 +1,6 @@
+//coding is like programming, you type numberzzzzzzzzzzzzzz
+//-brimboi
+
 package; //credit to barrierfalki used his code as refference
 
 #if desktop
@@ -80,7 +83,7 @@ class NewStoryState extends MusicBeatState
 		background1.antialiasing = ClientPrefs.globalAntialiasing;
 		add(background1);
 
-		background2 = new FlxSprite(-80).loadGraphic(Paths.image('storymenu/placeholder'));
+		background2 = new FlxSprite(-75).loadGraphic(Paths.image('storymenu/burgambi'));
 		background2.alpha = 0.75;
 		background2.scrollFactor.set();
 		background2.updateHitbox();
@@ -142,21 +145,21 @@ class NewStoryState extends MusicBeatState
 		weekText2 = new FlxSprite(-150, -200).loadGraphic(Paths.image('storymenu/weektitle2'));
 		weekText2.updateHitbox();
 		weekText2.antialiasing = ClientPrefs.globalAntialiasing;
-		weekText2.scale.set(5, 5);
+		weekText2.scale.set(0.65, 0.65);
 		weekText2.visible = false;
 		menuItems.add(weekText2);
 
 		weekText3 = new FlxSprite(-150, -200).loadGraphic(Paths.image('storymenu/weektitle3'));
 		weekText3.updateHitbox();
 		weekText3.antialiasing = ClientPrefs.globalAntialiasing;
-		weekText3.scale.set(5, 5);
+		weekText3.scale.set(0.65, 0.65);
 		weekText3.visible = false;
 		menuItems.add(weekText3);
 
 		weekText4 = new FlxSprite(-150, -200).loadGraphic(Paths.image('storymenu/weektitle4'));
 		weekText4.updateHitbox();
 		weekText4.antialiasing = ClientPrefs.globalAntialiasing;
-		weekText4.scale.set(5, 5);
+		weekText4.scale.set(0.65, 0.65);
 		weekText4.visible = false;
 		menuItems.add(weekText4);
 

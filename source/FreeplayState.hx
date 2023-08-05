@@ -30,7 +30,7 @@ class FreeplayState extends MusicBeatState
 
 	var selector:FlxText;
 	private static var curSelected:Int = 0;
-	var curDifficulty:Int = -1;
+	var curDifficulty:Int = 2;
 	private static var lastDifficultyName:String = '';
 
 	var scoreBG:FlxSprite;
@@ -421,9 +421,9 @@ class FreeplayState extends MusicBeatState
 		curDifficulty += change;
 
 		if (curDifficulty < 0)
-			curDifficulty = CoolUtil.difficulties.length-1;
+			curDifficulty = 2;
 		if (curDifficulty >= CoolUtil.difficulties.length)
-			curDifficulty = 0;
+			curDifficulty = 2;
 
 		lastDifficultyName = CoolUtil.difficulties[curDifficulty];
 
@@ -525,7 +525,7 @@ class FreeplayState extends MusicBeatState
 		}
 		else
 		{
-			curDifficulty = 0;
+			curDifficulty = 2;
 		}
 
 		var newPos:Int = CoolUtil.difficulties.indexOf(lastDifficultyName);

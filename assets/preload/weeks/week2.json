@@ -2,36 +2,36 @@
 	"songs": [
 		[
 			"Leftover",
-			"face",
+			"burgambi",
 			[
 				255,
 				255,
-				255
+				0
 			]
 		],
 		[
 			"Beefsteak",
-			"face",
+			"burgambi",
 			[
 				255,
 				255,
-				255
+				0
 			]
 		],
 		[
 			"Takeout",
-			"face",
+			"burgambi",
 			[
-				60,
-				40,
-				40
+				138,
+				138,
+				0
 			]
 		]
 	],
 	"hiddenUntilUnlocked": false,
 	"hideFreeplay": false,
 	"weekBackground": "stage",
-	"difficulties": "Hard",
+	"difficulties": "Normal, Hard",
 	"weekCharacters": [
 		"dad",
 		"bf",
