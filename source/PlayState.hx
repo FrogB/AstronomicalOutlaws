@@ -232,6 +232,8 @@ class PlayState extends MusicBeatState
 	var halloweenBG:BGSprite;
 	var halloweenWhite:BGSprite;
 
+	var evilTrail:FlxTrail;
+
 	var phillyLightsColors:Array<FlxColor>;
 	var phillyWindow:BGSprite;
 	var phillyStreet:BGSprite;
@@ -1079,9 +1081,21 @@ class PlayState extends MusicBeatState
 				resetFastCar();
 				addBehindGF(fastCar);
 
-			case 'schoolEvil':
-				var evilTrail = new FlxTrail(dad, null, 4, 24, 0.3, 0.069); //nice
-				addBehindDad(evilTrail);
+			case 'schoolEvil' | 'spooky':
+				evilTrail = new FlxTrail(dad, null, 4, 12, 0.3, 0.069);
+				insert(members.indexOf(dadGroup) - 1, evilTrail);
+		}
+
+		switch(dad.curCharacter)
+		{
+			case 'PCMan-angry':
+				evilTrail = new FlxTrail(dad, null, 4, 12, 0.3, 0.069); //nice
+				insert(members.indexOf(dadGroup) - 1, evilTrail);
+				switch (curStage)
+				{
+					case 'spooky':
+					evilTrail.color = 0xFF383838;
+				}
 		}
 
 		var file:String = Paths.json(songName + '/dialogue'); //Checks for json/Psych Engine dialogue

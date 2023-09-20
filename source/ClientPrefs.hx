@@ -16,7 +16,7 @@ class ClientPrefs {
 	public static var noteSplashes:Bool = true;
 	public static var lowQuality:Bool = false;
 	public static var judgementCounter:String = 'Simple';
-	public static var framerate:Int = 60;
+	public static var framerate:Int = 144;
 	public static var cursing:Bool = true;
 	public static var violence:Bool = true;
 	public static var camZooms:Bool = true;

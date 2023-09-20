@@ -289,7 +289,7 @@ class NewStoryState extends MusicBeatState
 				FlxG.sound.play(Paths.sound('storyMenu'));
 				FlxTween.angle(pcman, 90, 360, 1.2, {ease : FlxEase.quadInOut});
 				camHUD.flash(FlxColor.WHITE, 1.5);
-				startSong('wiring/wiring-hard', 'capacitor', 'voltage');
+				startSong('Wiring', 'Capacitor', 'Voltage');
 				trace('WEEK 1: Wiring, Capacitor, Voltage');
 			}
 			/**if (whichWeek == 2)
@@ -298,7 +298,7 @@ class NewStoryState extends MusicBeatState
 				FlxG.sound.play(Paths.sound('storyMenu'));
 				FlxTween.angle(burgambi, 90, 360, 1.2, {ease : FlxEase.quadInOut});
 				camHUD.flash(FlxColor.WHITE, 1.5);
-				startSong('wiring/wiring-hard', 'capacitor', 'voltage');
+				startSong('Beefsteak', 'Leftover', 'Takeout');
 				trace('WEEK 2: Beefsteak, Leftover, Takeout');
 			}
 			if (whichWeek == 3)
@@ -307,7 +307,7 @@ class NewStoryState extends MusicBeatState
 				FlxG.sound.play(Paths.sound('storyMenu'));
 				FlxTween.angle(pizzambi, 90, 360, 1.2, {ease : FlxEase.quadInOut});
 				camHUD.flash(FlxColor.WHITE, 1.5);
-				startSong('wiring/wiring-hard', 'capacitor', 'voltage');
+				startSong('Topping', 'Dish-Up', 'Pre-Heat');
 				trace('WEEK 3: Topping, Dish-Up, Pre-Heat');
 			}
 			if (whichWeek == 4)
@@ -316,7 +316,7 @@ class NewStoryState extends MusicBeatState
 				FlxG.sound.play(Paths.sound('storyMenu'));
 				FlxTween.angle(finale, 90, 360, 1.2, {ease : FlxEase.quadInOut});
 				camHUD.flash(FlxColor.WHITE, 1.5);
-				startSong('wiring/wiring-hard', 'capacitor', 'voltage');
+				startSong('Robotics', 'Epicurean', 'Revolution');
 				trace('WEEK 4: Robotics, Epicurean, Revolution');
 			}
 			**/
@@ -373,23 +373,26 @@ class NewStoryState extends MusicBeatState
 		}
 		super.update(elapsed);
 		}
-	function startSong(songName1:String, songName2:String, songName3:String)
+	function startSong(songName1:String, songName2:String, songName3:String) //i had to rewrite this 2 times help -frogb
     {
 	   FlxFlicker.flicker(pcman, 1, 0.06, false, false, function(flick:FlxFlicker)
 	   {
-	    PlayState.storyPlaylist = [songName1, songName2, songName3];
-		PlayState.isStoryMode = true;
-	    PlayState.storyWeek = 0;
+		PlayState.storyWeek = 0;
 		var curWeekInt = PlayState.storyWeek;
+
 		curWeek = WeekData.weeksLoaded.get(WeekData.weeksList[curWeekInt]);
-		trace(curWeekInt);
-	    PlayState.SONG = Song.loadFromJson(PlayState.storyPlaylist[0], '');
+		//trace(curWeekInt);
+		
+		PlayState.storyPlaylist = [songName1, songName2, songName3];
+		PlayState.isStoryMode = true;
+
+	    PlayState.SONG = Song.loadFromJson(PlayState.storyPlaylist[0].toLowerCase(), PlayState.storyPlaylist[0].toLowerCase());
 	    PlayState.campaignScore = 0;
 	    PlayState.campaignMisses = 0;
 		FreeplayState.destroyFreeplayVocals();
 		new FlxTimer().start(1, function(tmr:FlxTimer)
 	    {
-		    LoadingState.loadAndSwitchState(new PlayState());
+		    LoadingState.loadAndSwitchState(new PlayState(), true);
 	    });
 	   });
 	}
